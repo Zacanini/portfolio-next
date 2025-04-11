@@ -43,7 +43,7 @@ export default function Hero() {
             </motion.h1>
             
             <motion.p variants={item} className="text-gray-300 text-xl mb-8 max-w-xl mx-auto lg:mx-0">
-              Desenvolvedor Full Stack apaixonado por criar interfaces interativas e soluções web inovadoras.
+              Desenvolvedor Full Stack .
             </motion.p>
 
             {/* Buttons */}
@@ -70,7 +70,7 @@ export default function Hero() {
               className="flex gap-6 mt-8 justify-center lg:justify-start"
             >
               <a 
-                href="https://linkedin.com/in/seu-linkedin" 
+                href="https://linkedin.com/in/matheus-zacanini" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-purple-500 transition-colors text-2xl"
