@@ -12,6 +12,12 @@ const projectCategories = [
     name: "Frontend",
     projects: [
       {
+        name: "Landing page de uma empresa de tecnologia",
+        description: "Desenvolvida em Next.Js com design responsivo e moderno para a empresa ZanartTec , orimizando SEO para motores e bsuca do google.",
+        image: "/images/zanart.png",
+        technologies: ["React", "JavaScript", "Tailwind CSS", "Next.js"],
+      },
+      {
         name: "Landing page de uma empresa de sistemas",
         description: "Desenvolvida em React e JSX com design responsivo e moderno para a empresa JF Systems.",
         image: "/images/capaZS.png",
@@ -129,18 +135,18 @@ export default function Projects() {
           <Tab.Panels className="mt-8">
             {projectCategories.map((category, categoryIndex) => (
               <Tab.Panel key={categoryIndex}>
-                <div className="relative">
+                <div className="relative px-4 md:px-8 max-w-4xl mx-auto">
                   {/* Carousel Navigation */}
                   <button 
                     onClick={() => prevSlide(category.name)}
-                    className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-zinc-800/80 hover:bg-purple-600 text-white p-3 rounded-full shadow-lg transform -translate-x-1/2 md:translate-x-0"
+                    className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-zinc-800/80 hover:bg-purple-600 text-white p-2 md:p-3 rounded-full shadow-lg"
                     aria-label="Projeto anterior"
                   >
-                    <FaChevronLeft />
+                    <FaChevronLeft className="text-sm md:text-base" />
                   </button>
                   
                   {/* Carousel */}
-                  <div className="overflow-hidden">
+                  <div className="overflow-hidden rounded-lg">
                     <div 
                       className="flex transition-transform duration-500 ease-in-out"
                       style={{ transform: `translateX(-${currentSlide[category.name] * 100}%)` }}
@@ -148,31 +154,31 @@ export default function Projects() {
                       {category.projects.map((project, index) => (
                         <div 
                           key={index} 
-                          className="w-full flex-shrink-0 p-4"
+                          className="w-full flex-shrink-0 p-1 md:p-2"
                         >
-                          <div className="card overflow-hidden">
+                          <div className="card overflow-hidden h-full">
                             {/* Project Image */}
-                            <div className="relative h-64 md:h-80">
+                            <div className="relative aspect-[16/9] w-full">
                               <Image
                                 src={project.image}
                                 alt={project.name}
                                 fill
-                                className="object-cover"
+                                className="object-cover object-top"
                                 loading={index === 0 ? "eager" : "lazy"}
-                                sizes="(max-width: 768px) 100vw, 800px"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 90vw, 800px"
                               />
                             </div>
                             
-                            <div className="p-6">
-                              <h3 className="text-xl font-bold mb-2">{project.name}</h3>
-                              <p className="text-gray-300 mb-4">{project.description}</p>
+                            <div className="p-3 md:p-4">
+                              <h3 className="text-base md:text-lg font-bold mb-1 md:mb-2">{project.name}</h3>
+                              <p className="text-gray-300 text-xs md:text-sm mb-2 md:mb-3 line-clamp-2">{project.description}</p>
                               
                               {/* Technologies */}
-                              <div className="flex flex-wrap gap-2 mb-4">
+                              <div className="flex flex-wrap gap-1 mb-2 md:mb-3">
                                 {project.technologies.map((tech, techIndex) => (
                                   <span 
                                     key={techIndex}
-                                    className="px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full"
+                                    className="px-1.5 py-0.5 bg-purple-900/30 text-purple-300 text-xs rounded-full"
                                   >
                                     {tech}
                                   </span>
@@ -180,15 +186,15 @@ export default function Projects() {
                               </div>
                               
                               {/* Links */}
-                              <div className="flex gap-4 mt-4">
+                              <div className="flex flex-wrap gap-2 mt-2 md:mt-3">
                                 {project.repo && (
                                   <a 
                                     href={project.repo}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md transition-colors"
+                                    className="flex items-center gap-1 bg-zinc-800 hover:bg-zinc-700 px-2 py-1 rounded-md transition-colors text-xs md:text-sm"
                                   >
-                                    <FaGithub /> Repositório
+                                    <FaGithub className="text-xs" /> Repositório
                                   </a>
                                 )}
                                 
@@ -197,9 +203,9 @@ export default function Projects() {
                                     href={project.link}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 px-4 py-2 rounded-md transition-colors"
+                                    className="flex items-center gap-1 bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 px-2 py-1 rounded-md transition-colors text-xs md:text-sm"
                                   >
-                                    <FaGlobe /> Ver Site
+                                    <FaGlobe className="text-xs" /> Ver Site
                                   </a>
                                 )}
                               </div>
@@ -207,11 +213,11 @@ export default function Projects() {
                           </div>
                           
                           {/* Pagination Dots */}
-                          <div className="flex justify-center mt-4 gap-2">
+                          <div className="flex justify-center mt-2 md:mt-3 gap-1.5">
                             {category.projects.map((_, dotIndex) => (
                               <button
                                 key={dotIndex}
-                                className={`w-3 h-3 rounded-full ${
+                                className={`w-1.5 h-1.5 md:w-2 md:h-2 rounded-full ${
                                   currentSlide[category.name] === dotIndex 
                                     ? 'bg-purple-500' 
                                     : 'bg-zinc-700'
@@ -231,10 +237,10 @@ export default function Projects() {
                   
                   <button 
                     onClick={() => nextSlide(category.name)}
-                    className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-zinc-800/80 hover:bg-purple-600 text-white p-3 rounded-full shadow-lg transform translate-x-1/2 md:translate-x-0"
+                    className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-zinc-800/80 hover:bg-purple-600 text-white p-2 md:p-3 rounded-full shadow-lg"
                     aria-label="Próximo projeto"
                   >
-                    <FaChevronRight />
+                    <FaChevronRight className="text-sm md:text-base" />
                   </button>
                 </div>
               </Tab.Panel>
