@@ -12,26 +12,34 @@ const skillCategories = [
     name: "Frontend",
     icon: <FaCode className="mr-2" />,
     skills: [
-      { name: "HTML", icon: "/images/html.png", level: 90 },
-      { name: "CSS", icon: "/images/css.webp", level: 85 },
+      { name: "HTML", icon: "/images/html.png", level: 100 },
+      { name: "CSS", icon: "/images/css.webp", level: 90 },
       { name: "JavaScript", icon: "/images/javaScript.svg", level: 85 },
       { name: "React", icon: "/images/react.svg", level: 80 },
+      {name: "Tailwind CSS", icon: "/images/tailWind.png", level: 70 },
+      {name: "Next.js", icon: "/images/nextLogo.svg", level: 60 },
+      
     ]
   },
   {
     name: "Backend",
     icon: <FaServer className="mr-2" />,
     skills: [
-      { name: "Node.js", icon: "/images/nodejs.svg", level: 75 },
-      { name: "Java", icon: "/images/java.webp", level: 75 },
-      { name: "C#", icon: "/images/c-sharp.svg", level: 70 },
+      { name: "Node.js", icon: "/images/nodejs.svg", level: 85 },
+      { name: "C#", icon: "/images/c-sharp.svg", level: 75 },
+      { name: "Java", icon: "/images/java.webp", level: 70 },
+      {name: "Python", icon: "/images/python.png", level: 60 },
     ]
   },
   {
     name: "Banco de Dados",
     icon: <FaDatabase className="mr-2" />,
     skills: [
-      { name: "SQL", icon: "/images/sql.svg", level: 80 },
+      
+      { name: "SQL", icon: "/images/sql.svg", level: 100 },
+      {name: "Sqlite", icon: "/images/sqlite.webp", level: 100 },
+      { name: "PostgreSQL", icon: "/images/postgress.webp", level: 80 },
+      
     ]
   },
   {
@@ -39,6 +47,8 @@ const skillCategories = [
     icon: <FaTools className="mr-2" />,
     skills: [
       { name: "Git", icon: "/images/git.svg", level: 85 },
+      {name: "Vite" , icon: "/images/vite.svg", level: 80 },
+
     ]
   }
 ];

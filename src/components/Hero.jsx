@@ -49,7 +49,7 @@ export default function Hero() {
             {/* Buttons */}
             <motion.div variants={item} className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a 
-                href="/CurrículoMatheusZacanini(2025-1).pdf" 
+                href="/CurriculoFullStack.pdf" 
                 download
                 className="px-6 py-3 bg-gradient-to-r from-purple-600 to-purple-800 text-white rounded-md hover:from-purple-700 hover:to-purple-900 transition-all flex items-center justify-center gap-2"
               >
@@ -106,9 +106,15 @@ export default function Hero() {
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500/20 to-orange-500/20 blur-3xl" />
               
               {/* Profile image or illustration can go here */}
-              <div className="relative z-10 w-full h-full rounded-full overflow-hidden border-4 border-purple-500/30 p-2">
-                <div className="w-full h-full rounded-full bg-gradient-to-br from-purple-600 to-orange-600 flex items-center justify-center">
-                  <span className="text-6xl">MZ</span>
+              <div className="relative z-10 w-full h-full rounded-full overflow-hidden border-4 border-orange-500/40 p-2">
+                <div className="w-full h-full rounded-full bg-gradient-to-br from-orange-400 to-orange-700 p-1 flex items-center justify-center overflow-hidden">
+                  <div className="w-full h-full rounded-full overflow-hidden group">
+                    <img 
+                      src="/images/perfilAnimation.svg" 
+                      alt="Matheus Zacanini" 
+                      className="w-full h-full object-cover object-bottom rounded-full transform transition-all duration-500 hover:scale-105 filter drop-shadow-[0_0_10px_rgba(194,65,12,0.8)] group-hover:drop-shadow-[0_0_18px_rgba(154,52,18,0.95)]"
+                    />
+                  </div>
                 </div>
               </div>
               

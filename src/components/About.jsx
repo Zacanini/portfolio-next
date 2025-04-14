@@ -35,10 +35,14 @@ export default function About() {
               
               {/* Main image */}
               <div className="relative z-10 rounded-lg overflow-hidden shadow-2xl shadow-purple-900/20 border border-zinc-700">
-                <div className="pt-[100%] bg-gradient-to-br from-purple-600/20 to-orange-600/20">
-                  {/* Este é um placeholder. Se você tiver uma foto sua, adicione aqui */}
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <span className="text-6xl text-white/50">MZ</span>
+                <div className="pt-[100%] bg-gradient-to-br from-orange-500/20 to-orange-700/20 relative">
+                  {/* Imagem de perfil */}
+                  <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/images/quadroAnimation.svg" 
+                      alt="Matheus Zacanini" 
+                      className="w-full h-full object-cover transform transition-all duration-500 hover:scale-105 filter drop-shadow-[0_0_10px_rgba(194,65,12,0.6)]"
+                    />
                   </div>
                 </div>
               </div>
@@ -55,22 +59,21 @@ export default function About() {
             <h3 className="text-2xl font-bold mb-4 text-purple-500">Desenvolvedor Full Stack</h3>
             
             <p className="text-gray-300 mb-6 text-lg">
-              Olá! Sou Matheus Zacanini, um desenvolvedor Full Stack apaixonado por construir soluções web 
-              inovadoras e experiências digitais envolventes. Com experiência em tecnologias front-end e back-end, 
-              busco constantemente aprender e aplicar meus conhecimentos em projetos desafiadores.
+            Oi! Me chamo Matheus Zacanini e trabalho como desenvolvedor Full Stack, com foco em React no front e Node.js no back. Tenho experiência criando APIs bem estruturadas, interfaces modernas e também aplicações desktop. Além da parte técnica, curto cuidar da experiência do usuário e do visual — então UX/UI também entra no meu processo.
             </p>
             
             <p className="text-gray-300 mb-6 text-lg">
-              Possuo conhecimento em linguagens como JavaScript, Java e C#, além de frameworks como React e 
-              tecnologias de back-end. Minha abordagem combina design moderno com funcionalidades robustas 
-              para criar aplicações web de alta qualidade.
+            Gosto de projetos em que consigo pegar uma ideia e transformar em algo real, funcional e com boa performance. Costumo unir uma visão mais prática com atenção aos detalhes, desde a arquitetura até o design da interface.
             </p>
             
+            <p className="text-gray-300 mb-6 text-lg">
+            Se precisa de alguém pra tocar o desenvolvimento de ponta a ponta, com uma entrega bem feita e organizada, é só chamar.
+            </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
               {/* Info block 1 */}
               <div className="card p-5">
-                <h4 className="text-lg font-semibold text-purple-400 mb-3">Educação</h4>
-                <p className="text-gray-300">Formação em Sistemas de Informação</p>
+                <h4 className="text-lg font-semibold text-purple-400 mb-3">Formação</h4>
+                <p className="text-gray-300">Análise e Desenvolvimento de Sistemas</p>
               </div>
               
               {/* Info block 2 */}
