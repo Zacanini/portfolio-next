@@ -35,7 +35,7 @@ export default function Navbar() {
       <nav className="container mx-auto px-6 flex justify-between items-center">
         <Link href="/#home">
           <h1 className="text-3xl font-bold bg-gradient-to-r from-purple-500 to-orange-500 text-transparent bg-clip-text">
-            ZACA
+            ZACANINI
           </h1>
         </Link>
 

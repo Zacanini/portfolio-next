@@ -18,12 +18,45 @@ const projectCategories = [
         technologies: ["React", "JavaScript", "Tailwind CSS", "Next.js"],
       },
       {
+        name: "Sistema de Zoologico",
+        description: "Desenvolvida em java , utilizando paginas JSP e servelets junto de bootstrap, com design direto , simples e moderno.",
+        image: "/images/zoo.svg",
+        technologies: ["JSP", "JAVA", "BootStrap CSS"],
+      },
+      {
         name: "Landing page de uma empresa de sistemas",
         description: "Desenvolvida em React e JSX com design responsivo e moderno para a empresa JF Systems.",
         image: "/images/capaZS.png",
         link: "https://jf-systems.vercel.app/",
-        repo: "https://github.com/Zacanini/portfolio",
-        technologies: ["React", "JavaScript", "CSS"]
+        repo: "https://github.com/Zacanini/JF-Systems",
+        technologies: ["React", "JavaScript", "Tailwind CSS"],
+      },
+      {
+        name : "Hamburgueria digital",
+        description: "Landing page de uma hamburgueria digital desenvolvida com React e Tailwind CSS, com design responsivo e moderno e foco em estrategias de SEO.",
+        image: "/images/burguers-site.png",
+        link: "https://www.zanart.com.br/pages/burguer",
+        technologies: ["React", "JavaScript", "Tailwind CSS", "Next.js"],
+      },
+      {
+        name : "Personal Pro",
+        description: "Landing page para um professor fisico , desenvolvida com React e Tailwind CSS, com design pensado para conversão de clientes e experiencia do usuario responsiva.",
+        image: "/images/personal.png",
+        link: "https://www.zanart.com.br/pages/personal",
+        technologies: ["React", "JavaScript", "Tailwind CSS", "Next.js"],
+      },
+      {
+        name : "Site DCE Vianna Junior",
+        description: "Site institucional do Diretório Central dos Estudantes da UFJF, desenvolvido com React e Tailwind CSS, com design responsivo e pensado para estudantes e comunidade acadêmica.",
+        image: "/images/DCE.svg",
+        link: "https://dce-vianna-junior.vercel.app",
+        technologies: ["React", "JavaScript", "Tailwind CSS"],
+      },
+      {
+        name : "Aplicativo DeskTop ",
+        description: "Aplicação desktop desenvolvida em nextron (Next.js + Eelectron) para uma equipe de Judo , para gerenciamento de alunos e performance. Pensado para ter tando um ainterface simples e direta , quanto para ser funcional e performatico.",
+        image: "/images/pousada.svg",
+        technologies: ["React", "JavaScript", "Tailwind CSS", "Next.js"],
       },
       {
         name: "Tela de Login Light/Dark",
@@ -36,7 +69,7 @@ const projectCategories = [
         name: "Spider Jump",
         description: "Jogo inspirado no Mario Bros, desenvolvido em JavaScript. O jogador clica para pular, com pontuação e aumento de dificuldade progressivo.",
         image: "/images/jogo.png",
-        repo: "https://github.com/Zacanini/LIGHT-DARK-Registration-Screen",
+        repo: "https://github.com/Zacanini/JogoSpiderJump",
         technologies: ["JavaScript", "HTML", "CSS"]
       },
       {
